@@ -1,0 +1,44 @@
+name: KakaoBank Rate Limits
+description: KakaoBank does not publicly publish specific API rate limit documentation for its open banking and partner APIs. Rate limits are governed by South Korea's Financial Services Commission (FSC) open banking framework and are defined through bilateral agreements with registered fintech partners. The following represents general guidance based on typical Korean open banking platform standards.
+url: https://eng.kakaobank.com/products
+created: '2026-06-13'
+modified: '2026-06-13'
+rateLimits:
+  - name: Open Banking Account Inquiry
+    description: Rate limit for account balance and transaction history inquiry API calls through the Korea FSC open banking platform.
+    scope: per registered application
+    requests: 1000
+    period: per minute
+    notes: Actual limits are defined by the FSC open banking switchboard and may vary by partner agreement.
+  - name: Open Banking Transfer API
+    description: Rate limit for fund transfer API calls, including interbank transfers initiated through the open banking framework.
+    scope: per registered application
+    requests: 100
+    period: per minute
+    notes: Transfer APIs are subject to stricter limits due to financial transaction risk management requirements under Korean banking regulations.
+  - name: Multi-Account Simultaneous Inquiry
+    description: Rate limit for simultaneous multi-account inquiry API calls, introduced in the FSC's expanded open banking initiative.
+    scope: per registered application
+    requests: 50
+    period: per minute
+    notes: Supports real-time multi-account inquiries across participating Korean financial institutions as per the FSC 2025 open banking expansion.
+  - name: Authentication (OAuth 2.0 Token)
+    description: Rate limit for OAuth 2.0 token issuance and refresh requests to the KakaoBank authorization server.
+    scope: per client credentials
+    requests: 60
+    period: per minute
+    notes: Token refresh requests should be managed client-side to avoid unnecessary re-authentication.
+authentication:
+  type: OAuth 2.0
+  description: KakaoBank APIs use OAuth 2.0 authorization code flow for customer-facing operations. Partner integrations within the FSC open banking framework use the standardized Korean open banking authentication protocol.
+  notes:
+    - Customer consent is required for all data access operations.
+    - Access tokens are short-lived and must be refreshed using refresh tokens.
+    - All API communication must use HTTPS/TLS 1.2 or higher.
+notes:
+  - KakaoBank does not publicly document specific rate limit thresholds outside of partner agreements.
+  - Rate limits for the FSC open banking platform are subject to the policies set by the Korea Financial Telecommunications and Clearings Institute (KFTC).
+  - Partners experiencing rate limit issues should contact KakaoBank through their official partnership inquiry channel.
+contact:
+  url: https://www.kakaobank.com/Corp/About/Affiliate
+  email: oss@kakaobank.com

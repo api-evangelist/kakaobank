@@ -1,0 +1,58 @@
+name: KakaoBank Plans and Pricing
+description: KakaoBank operates as an internet-only bank in South Korea. Access to KakaoBank services is provided through the mobile application and web platform. There are no traditional API subscription tiers for the general public; KakaoBank's APIs are primarily available to regulated partners and fintechs through the Korea Financial Services Commission (FSC) open banking framework. Consumer-facing services are free of most fees.
+url: https://eng.kakaobank.com/products
+created: '2026-06-13'
+modified: '2026-06-13'
+plans:
+  - name: Consumer Banking (Free)
+    description: Standard personal banking services available to all KakaoBank account holders at no cost. Includes account opening, transfers, savings, and loan applications via the mobile app.
+    url: https://eng.kakaobank.com/products
+    price: 0
+    currency: KRW
+    unit: per month
+    features:
+      - Mobile account opening with digital KYC
+      - Demand deposit and savings accounts
+      - Peer-to-peer and interbank transfers
+      - Debit card issuance
+      - Open banking aggregation (view balances at other Korean banks)
+      - AI financial calculator
+      - Group accounts
+      - No account maintenance fees
+      - No transfer fees for standard transactions
+      - No prepayment penalties on loans
+  - name: Business Owner Banking
+    description: Banking services tailored for small business owners in South Korea, including specialized credit loan products with competitive rates and zero fees.
+    url: https://eng.kakaobank.com/products/business-owner-credit-loan
+    price: 0
+    currency: KRW
+    unit: per month
+    features:
+      - Business owner credit loans
+      - Zero fees on all loan transactions
+      - No prepayment penalties
+      - Digital-only application process
+      - Data-driven credit assessment
+  - name: Open Banking Partner (FSC-Regulated)
+    description: API access for fintech companies and financial institutions participating in South Korea's national open banking framework, governed by the Financial Services Commission (FSC). Partners must be registered with the FSC and comply with Korean financial regulations.
+    url: https://www.fsc.go.kr/eng/pr010101/22141
+    price: null
+    currency: KRW
+    unit: negotiated
+    features:
+      - Account balance inquiry API
+      - Transaction history API
+      - Fund transfer API
+      - Multi-account simultaneous inquiry
+      - Real-time data access
+      - OAuth 2.0 authentication
+      - REST API (JSON)
+      - FSC compliance framework
+notes:
+  - KakaoBank does not publicly list a dedicated developer API pricing page for third-party integrators outside the FSC open banking framework.
+  - Loan interest rates vary based on individual credit scores and income levels; loans up to 300 million KRW are available.
+  - Overseas remittance fees may apply for international transfers.
+  - For partnership and API integration inquiries, contact KakaoBank via their partnership page.
+contact:
+  url: https://www.kakaobank.com/Corp/About/Affiliate
+  phone: '+82-2-6420-3333'

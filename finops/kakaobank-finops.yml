@@ -1,0 +1,65 @@
+name: KakaoBank FinOps
+description: Financial operations guidance for organizations integrating with KakaoBank and South Korea's open banking ecosystem. KakaoBank operates on a fee-light model, charging minimal or zero fees for most banking operations. Cost considerations for API integrators primarily relate to FSC open banking compliance, transaction volumes, and partner agreement terms.
+url: https://eng.kakaobank.com/products
+created: '2026-06-13'
+modified: '2026-06-13'
+currency: KRW
+costCenters:
+  - name: Open Banking API Access
+    description: Costs associated with accessing KakaoBank and the Korean FSC open banking platform as a registered fintech or financial institution partner.
+    type: regulatory-and-partnership
+    costModel: negotiated
+    notes:
+      - FSC open banking registration fees may apply for fintech companies joining the Korean open banking switchboard.
+      - Per-transaction fees may be assessed by the Korea Financial Telecommunications and Clearings Institute (KFTC) for transfer API calls.
+      - Account inquiry APIs are generally low-cost or free under the FSC framework.
+  - name: Transfer Fees
+    description: Fees associated with fund transfers executed through KakaoBank's open banking transfer APIs.
+    type: per-transaction
+    costModel: variable
+    notes:
+      - Standard domestic interbank transfers via open banking are typically free for end consumers on KakaoBank's platform.
+      - Overseas remittance transactions may incur fees based on destination country and amount.
+      - Business API partners may negotiate wholesale transfer rates through the FSC framework.
+  - name: Loan Origination (No Fees)
+    description: KakaoBank explicitly charges zero origination fees, zero prepayment penalties, and zero early repayment fees for consumer and business credit loans.
+    type: zero-fee
+    costModel: interest-rate-based
+    notes:
+      - Revenue from loan products is generated entirely through interest rates determined by borrower credit score and income.
+      - No setup fees, processing fees, or prepayment penalties apply.
+      - Interest rates range based on credit assessment via NICE Credit and KakaoBank's proprietary models.
+  - name: Infrastructure and Compliance
+    description: Internal cost considerations for organizations building integrations with KakaoBank, including compliance with Korean financial regulations.
+    type: operational
+    costModel: fixed-and-variable
+    lineItems:
+      - name: FSC Open Banking Registration
+        description: One-time and annual fees for registering as a participant in South Korea's open banking platform via the FSC.
+        frequency: annual
+        notes: Required for all third-party fintechs and banks accessing the open banking switchboard.
+      - name: KFTC Transaction Fees
+        description: Per-transaction fees charged by the Korea Financial Telecommunications and Clearings Institute for transfer and inquiry API calls.
+        frequency: per-transaction
+        notes: Rates are set by the KFTC and apply uniformly to all open banking participants.
+      - name: TLS/Security Infrastructure
+        description: Cost of maintaining TLS 1.2+ encrypted connections and OAuth 2.0 authentication infrastructure required by KakaoBank API security standards.
+        frequency: ongoing
+        notes: All API integrations must use HTTPS with valid certificates.
+      - name: KYC and Identity Verification
+        description: Costs related to customer identity verification using KakaoBank's KYC approach (including selfie-based verification) for onboarding new users via partner applications.
+        frequency: per-user
+        notes: KakaoBank uses modern KYC methods including selfie-based proof of identity for account creation.
+optimization:
+  - tip: Batch account inquiry requests where possible to minimize API call volume against FSC open banking rate limits.
+  - tip: Cache account balance data with appropriate TTL to reduce repeated inquiry API calls and associated KFTC transaction fees.
+  - tip: Use KakaoBank's zero-fee loan structure to eliminate origination cost when building lending partner integrations.
+  - tip: Leverage KakaoBank's AI-driven credit scoring models through partnership to reduce manual credit assessment costs.
+  - tip: Monitor FSC policy updates — the 2025 expansion allowing simultaneous multi-account inquiries can reduce the number of sequential API calls needed.
+references:
+  - name: KakaoBank Partnership Inquiries
+    url: https://www.kakaobank.com/Corp/About/Affiliate
+  - name: FSC Open Banking Press Release
+    url: https://www.fsc.go.kr/eng/pr010101/22141
+  - name: OECD Korea Open Banking Innovation Case Study
+    url: https://oecd-opsi.org/innovations/innovating-koreas-financial-payment-infrastructure-with-open-banking/

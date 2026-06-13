@@ -1,0 +1,117 @@
+aid: kakaobank
+name: KakaoBank
+description: KakaoBank is South Korea's leading internet-only bank, offering REST APIs for account management, fund transfers, loans, credit scoring, and open banking data connectivity for the Korean market. Founded in 2016 and backed by Kakao Corp., KakaoBank serves over 26 million customers through a fully mobile and API-first digital banking platform.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/kakaobank/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Banking
+  - Finance
+  - Open Banking
+  - Korea
+  - Fintech
+  - Account Management
+  - Transfers
+  - Loans
+  - Credit Scoring
+  - Mobile Banking
+apis:
+  - aid: kakaobank:account-management-api
+    name: KakaoBank Account Management API
+    description: REST API for managing KakaoBank accounts including demand deposits, savings accounts, and group accounts. Provides access to account balances, transaction history, and account holder information for authenticated users in the Korean market.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://eng.kakaobank.com/products
+    baseURL: https://api.kakaobank.com
+    tags:
+      - Account Management
+      - Deposits
+      - Savings
+      - Banking
+    properties:
+      - type: Documentation
+        url: https://eng.kakaobank.com/products
+  - aid: kakaobank:transfer-api
+    name: KakaoBank Transfer API
+    description: REST API enabling fund transfers between KakaoBank accounts and external bank accounts within South Korea's open banking network. Supports peer-to-peer transfers, interbank transfers, and overseas remittance services.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://eng.kakaobank.com/products
+    baseURL: https://api.kakaobank.com
+    tags:
+      - Transfers
+      - Payments
+      - Open Banking
+      - Remittance
+    properties:
+      - type: Documentation
+        url: https://eng.kakaobank.com/products
+  - aid: kakaobank:loan-api
+    name: KakaoBank Loan API
+    description: REST API for loan origination and management including credit loans, business owner credit loans, and housing-related loans. Provides programmatic access to loan applications, repayment schedules, and loan status queries with no prepayment penalties.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://eng.kakaobank.com/products/credit-loan
+    baseURL: https://api.kakaobank.com
+    tags:
+      - Loans
+      - Credit
+      - Mortgage
+      - Banking
+    properties:
+      - type: Documentation
+        url: https://eng.kakaobank.com/products/credit-loan
+  - aid: kakaobank:credit-scoring-api
+    name: KakaoBank Credit Scoring API
+    description: REST API providing alternative credit scoring capabilities powered by KakaoBank's data-driven credit models. Integrates with partners such as NICE Credit to assess creditworthiness beyond traditional metrics, enabling faster loan approvals for Korean market users.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://eng.kakaobank.com/products
+    baseURL: https://api.kakaobank.com
+    tags:
+      - Credit Scoring
+      - Alternative Credit
+      - Risk Assessment
+      - Fintech
+    properties:
+      - type: Documentation
+        url: https://eng.kakaobank.com/products
+  - aid: kakaobank:open-banking-api
+    name: KakaoBank Open Banking API
+    description: REST API connecting to South Korea's national open banking switchboard, enabling aggregated views of balances and transactions from multiple financial institutions. Supports real-time multi-account inquiries and in-app transfers across participating Korean banks per FSC open banking standards.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://eng.kakaobank.com/products
+    baseURL: https://openapi.kakaobank.com
+    tags:
+      - Open Banking
+      - Account Aggregation
+      - Korea
+      - FSC
+      - Fintech
+    properties:
+      - type: Documentation
+        url: https://eng.kakaobank.com/products
+common:
+  - type: Website
+    url: https://www.kakaobank.com
+  - type: Documentation
+    url: https://eng.kakaobank.com/products
+  - type: GitHubOrg
+    url: https://github.com/kakaobank
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/kakaobank
+  - type: Blog
+    url: https://tech.kakaobank.com
+  - type: Pricing
+    url: https://eng.kakaobank.com/products
+  - type: StatusPage
+    url: https://www.kakaobank.com
+  - type: X
+    url: https://x.com/kakaobank
+  - type: Plans
+    url: plans/kakaobank-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/kakaobank-rate-limits.yml
+  - type: FinOps
+    url: finops/kakaobank-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
