@@ -1,34 +1,72 @@
 {
   "url": "https://tech.kakaobank.com",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
-      "title": "AI, 고객 행동의 순서를 읽다: 카카오뱅크 시퀀스 기반 FDS 모델 개발기",
+      "title": "AI, \uace0\uac1d \ud589\ub3d9\uc758 \uc21c\uc11c\ub97c \uc77d\ub2e4: \uce74\uce74\uc624\ubc45\ud06c \uc2dc\ud000\uc2a4 \uae30\ubc18 FDS \ubaa8\ub378 \uac1c\ubc1c\uae30",
       "url": "https://tech.kakaobank.com/posts/2606-sequence-based-fds-model/",
       "date": "2026-06-09",
-      "authors": ["Fyve(권오현)"],
-      "tags": ["AI", "FDS", "Fraud Detection", "Sequence Model"]
+      "authors": [
+        "Fyve(\uad8c\uc624\ud604)"
+      ],
+      "tags": [
+        "AI",
+        "FDS",
+        "Fraud Detection",
+        "Sequence Model"
+      ]
     },
     {
-      "title": "사람이 기다리지 않는 담보심사시스템 설계",
+      "title": "\uc0ac\ub78c\uc774 \uae30\ub2e4\ub9ac\uc9c0 \uc54a\ub294 \ub2f4\ubcf4\uc2ec\uc0ac\uc2dc\uc2a4\ud15c \uc124\uacc4",
       "url": "https://tech.kakaobank.com/posts/2605-no-wait-collateral-review-system-design/",
       "date": "2026-05-06",
-      "authors": ["Jerome(정진석)"],
-      "tags": ["System Design", "Collateral Review", "Banking"]
+      "authors": [
+        "Jerome(\uc815\uc9c4\uc11d)"
+      ],
+      "tags": [
+        "System Design",
+        "Collateral Review",
+        "Banking"
+      ]
     },
     {
-      "title": "금융 보안 퀴즈, AI에게 풀게 해봤습니다: 2025 금융 AI Challenge 우수상 후기",
+      "title": "\uae08\uc735 \ubcf4\uc548 \ud034\uc988, AI\uc5d0\uac8c \ud480\uac8c \ud574\ubd24\uc2b5\ub2c8\ub2e4: 2025 \uae08\uc735 AI Challenge \uc6b0\uc218\uc0c1 \ud6c4\uae30",
       "url": "https://tech.kakaobank.com/posts/2602-financial-security-ai-challenge-review/",
       "date": "2026-03-18",
-      "authors": ["Yann(이요한)", "Haki(문하겸)"],
-      "tags": ["AI", "Security", "Finance", "Challenge"]
+      "authors": [
+        "Yann(\uc774\uc694\ud55c)",
+        "Haki(\ubb38\ud558\uacb8)"
+      ],
+      "tags": [
+        "AI",
+        "Security",
+        "Finance",
+        "Challenge"
+      ]
     },
     {
-      "title": "Agentic AI의 시대, AWS re:Invent 2025 현장을 가다",
+      "title": "Agentic AI\uc758 \uc2dc\ub300, AWS re:Invent 2025 \ud604\uc7a5\uc744 \uac00\ub2e4",
       "url": "https://tech.kakaobank.com/posts/2603-aws-reinvent-2025-a-deep-dive-into-agentic-ai/",
       "date": "2026-03-10",
-      "authors": ["Levi(이재빈)", "June(김창현)", "Ryan(김학천)"],
-      "tags": ["AI", "AWS", "Agentic AI", "Conference"]
+      "authors": [
+        "Levi(\uc774\uc7ac\ube48)",
+        "June(\uae40\ucc3d\ud604)",
+        "Ryan(\uae40\ud559\ucc9c)"
+      ],
+      "tags": [
+        "AI",
+        "AWS",
+        "Agentic AI",
+        "Conference"
+      ]
     }
-  ]
+  ],
+  "repo": "kakaobank",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/kakaobank",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
