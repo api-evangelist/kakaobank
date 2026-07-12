@@ -90,6 +90,8 @@ apis:
       - type: Documentation
         url: https://eng.kakaobank.com/products
 common:
+  - type: DomainSecurity
+    url: security/kakaobank-domain-security.yml
   - type: Website
     url: https://www.kakaobank.com
   - type: Documentation
