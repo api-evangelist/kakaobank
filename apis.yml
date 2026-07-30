@@ -1,7 +1,19 @@
 aid: kakaobank
 name: KakaoBank
 description: KakaoBank is South Korea's leading internet-only bank, offering REST APIs for account management, fund transfers, loans, credit scoring, and open banking data connectivity for the Korean market. Founded in 2016 and backed by Kakao Corp., KakaoBank serves over 26 million customers through a fully mobile and API-first digital banking platform.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kakaobank.png
 url: https://raw.githubusercontent.com/api-evangelist/kakaobank/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
