@@ -33,6 +33,17 @@ tags:
   - Banking
   - Finance
   - Open Banking
+  - South Korea
+  - Fintech
+  - Account Management
+  - Transfers
+  - Loans
+  - Credit Scoring
+  - Mobile Banking
+tags_raw:
+  - Banking
+  - Finance
+  - Open Banking
   - Korea
   - Fintech
   - Account Management
@@ -62,6 +73,11 @@ apis:
     humanURL: https://eng.kakaobank.com/products
     baseURL: https://api.kakaobank.com
     tags:
+      - Transfers
+      - Payments
+      - Open Banking
+      - Remittances
+    tags_raw:
       - Transfers
       - Payments
       - Open Banking
@@ -104,6 +120,12 @@ apis:
     humanURL: https://eng.kakaobank.com/products
     baseURL: https://openapi.kakaobank.com
     tags:
+      - Open Banking
+      - Account Aggregation
+      - South Korea
+      - FSC
+      - Fintech
+    tags_raw:
       - Open Banking
       - Account Aggregation
       - Korea
