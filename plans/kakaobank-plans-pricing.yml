@@ -1,3 +1,8 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
+generated: '2026-06-13'
 name: KakaoBank Plans and Pricing
 description: KakaoBank operates as an internet-only bank in South Korea. Access to KakaoBank services is provided through the mobile application and web platform. There are no traditional API subscription tiers for the general public; KakaoBank's APIs are primarily available to regulated partners and fintechs through the Korea Financial Services Commission (FSC) open banking framework. Consumer-facing services are free of most fees.
 url: https://eng.kakaobank.com/products

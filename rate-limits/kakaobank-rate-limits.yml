@@ -1,3 +1,8 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
+generated: '2026-06-13'
 name: KakaoBank Rate Limits
 description: KakaoBank does not publicly publish specific API rate limit documentation for its open banking and partner APIs. Rate limits are governed by South Korea's Financial Services Commission (FSC) open banking framework and are defined through bilateral agreements with registered fintech partners. The following represents general guidance based on typical Korean open banking platform standards.
 url: https://eng.kakaobank.com/products
