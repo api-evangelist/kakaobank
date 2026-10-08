@@ -61,3 +61,31 @@ notes:
 contact:
   url: https://www.kakaobank.com/Corp/About/Affiliate
   phone: '+82-2-6420-3333'
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Consumer Banking (Free)
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: Business Owner Banking
+    access: other
+    model: free
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: Open Banking Partner (FSC-Regulated)
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
