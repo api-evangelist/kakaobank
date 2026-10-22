@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/kakaobank/integrations
 - https://n8n.io/integrations/kakaobank/
@@ -10,7 +10,39 @@ checked:
 - https://monid.ai/tools/kakaobank
 - https://n8n.io/integrations/kakaobank/
 - https://zapier.com/apps/kakaobank/integrations
+- https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/076e7a70-9d5c-4bad-9ee5-2bcb5153b6ed/35/bbsctt.do
+- https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/37ebe6f6-b9ae-4692-9db2-44e5f434bbd3/36/bbsctt.do
+- https://www.mydatacenter.or.kr:3441/myd/index/index.do
+- https://www.mydatacenter.or.kr:3441/myd/intro/sub3.do
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Korea MyData information providers on the rate-cut-request service (MyData Support Center)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.mydatacenter.or.kr:3441/myd/bbsctt/notice1/notice/076e7a70-9d5c-4bad-9ee5-2bcb5153b6ed/35/bbsctt.do
+  category: Korean MyData information provider (data holder transmitting on customer request)
+  contract_reference:
+    register: Korea MyData information providers on the rate-cut-request service (MyData Support Center)
+    spec_file: null
+    standard: null
+    role: information-provider
+    registrations:
+    - registered_name: 카카오뱅크
+      register_country: KR
+      matched_domain: kakaobank.com
+      matched_by: domain
+      identity: wikidata Q33570421 'KakaoBank' (Korean label 카카오뱅크) P856 https://www.kakaobank.com/
+    signal_note: 'participation only: listed by the MyData Support Center (Korea Credit Information Services, for
+      the FSC); no conformance certification is published'
+    detected_by: sweep-korea-mydata-operators.py
+    detected: '2026-10-22'
+    identity_source: wikidata (Korean label -> English label / P856; labelled provenance step, Kin 2026-10-15 decision
+      1)
+  detected_by: sweep-korea-mydata-operators.py
+  first_seen: '2026-10-22'
 templates: []
