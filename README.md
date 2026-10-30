@@ -64,29 +64,109 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-KakaoBank is South Korea's leading internet-only bank, founded in 2016 and backed by Kakao Corp. (operators of KakaoTalk, used by 88% of South Koreans). The bank serves over 26 million customers through a fully mobile and API-first digital banking platform, offering account management, fund transfers, loans, credit scoring, and open banking data connectivity for the Korean market.
+KakaoBank is South Korea's leading internet-only bank, offering REST APIs for account management, fund transfers, loans, credit scoring, and open banking data connectivity for the Korean market. Founded in 2016 and backed by Kakao Corp., KakaoBank serves over 26 million customers through a fully mobile and API-first digital banking platform.
 
-## APIs
+**Areas:** Banking · Finance · Open Banking · South Korea · Fintech · Account Management · Transfers · Loans · Credit Scoring · Mobile Banking
 
-- **Account Management API** - Demand deposits, savings accounts, group accounts, balance and transaction history
-- **Transfer API** - Peer-to-peer transfers, interbank transfers via Korea's open banking network, overseas remittance
-- **Loan API** - Credit loans, business owner loans, housing loans, with zero fees and no prepayment penalties
-- **Credit Scoring API** - Data-driven alternative credit scoring integrated with partners such as NICE Credit
-- **Open Banking API** - Aggregated multi-bank account views and transfers via South Korea's FSC open banking switchboard
+## KakaoBank on APIs.io
 
-## Resources
+Everything profiled for KakaoBank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kakaobank/](https://apis.io/providers/kakaobank/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [KakaoBank Account Management API](https://apis.io/apis/kakaobank/account-management-api/) — REST API for managing KakaoBank accounts including demand deposits, savings accounts, and group accounts. Provides access to account balances, transaction…
+- [KakaoBank Transfer API](https://apis.io/apis/kakaobank/transfer-api/) — REST API enabling fund transfers between KakaoBank accounts and external bank accounts within South Korea's open banking network. Supports peer-to-peer…
+- [KakaoBank Loan API](https://apis.io/apis/kakaobank/loan-api/) — REST API for loan origination and management including credit loans, business owner credit loans, and housing-related loans. Provides programmatic access to…
+- [KakaoBank Credit Scoring API](https://apis.io/apis/kakaobank/credit-scoring-api/) — REST API providing alternative credit scoring capabilities powered by KakaoBank's data-driven credit models. Integrates with partners such as NICE Credit to…
+- [KakaoBank Open Banking API](https://apis.io/apis/kakaobank/open-banking-api/) — REST API connecting to South Korea's national open banking switchboard, enabling aggregated views of balances and transactions from multiple financial…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kakaobank Domain Security](https://apis.io/security/kakaobank/kakaobank-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Kakaobank Plans Pricing](https://apis.io/plans/kakaobank/kakaobank-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Kakaobank Rate Limits](https://apis.io/rate-limits/kakaobank/kakaobank-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Kakaobank Finops](https://apis.io/finops/kakaobank/kakaobank-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.kakaobank.com)
-- [English Site](https://eng.kakaobank.com)
-- [Tech Blog](https://tech.kakaobank.com)
-- [GitHub](https://github.com/kakaobank)
-- [LinkedIn](https://www.linkedin.com/company/kakaobank)
-- [Partnership Inquiries](https://www.kakaobank.com/Corp/About/Affiliate)
+- [Documentation](https://eng.kakaobank.com/products)
+- [Pricing](https://eng.kakaobank.com/products)
+- [Blog](https://tech.kakaobank.com)
+- [Status](https://www.kakaobank.com)
 
-## Open Banking
+## API Evangelist rating
 
-KakaoBank participates in South Korea's national open banking platform, launched by the Financial Services Commission (FSC) in December 2019. The platform uses REST APIs and supports account inquiry, fund transfers, and (since 2025) simultaneous multi-account real-time inquiries. Third-party fintech companies must register with the FSC to access the open banking switchboard.
+**Kin Score 12.5** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainer
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 7.9 |
 
-**Kin Lane** - kin@apievangelist.com
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kakaobank/](https://apis.io/providers/kakaobank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for KakaoBank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kakaobank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
